@@ -14,7 +14,7 @@ vim.opt.mouse = 'a'
 vim.opt.showmode = false
 
 -- See `:help 'clipboard'`
-vim.opt.clipboard = vim.env.SSH_TTY and '' or 'unnamedplus' -- Sync with system clipboard
+vim.opt.clipboard = '' -- disable clipboard sync
 
 -- Enable break indent
 vim.opt.breakindent = true
