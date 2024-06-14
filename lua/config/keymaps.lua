@@ -25,12 +25,12 @@ vim.keymap.set('n', '<up>', '<cmd>echo "Use k to move!!"<CR>')
 vim.keymap.set('n', '<down>', '<cmd>echo "Use j to move!!"<CR>')
 
 -- Option key workaround
-vim.keymap.set('n', '√', '<cmd>m .+1<cr>==', { desc = 'Move Down' })
-vim.keymap.set('n', 'ª', '<cmd>m .-2<cr>==', { desc = 'Move Up' })
-vim.keymap.set('i', '√', '<esc><cmd>m .+1<cr>==gi', { desc = 'Move Down' })
-vim.keymap.set('i', 'ª', '<esc><cmd>m .-2<cr>==gi', { desc = 'Move Up' })
-vim.keymap.set('v', '√', ":m '>+1<cr>gv=gv", { desc = 'Move Down' })
-vim.keymap.set('v', 'ª', ":m '<-2<cr>gv=gv", { desc = 'Move Up' })
+-- vim.keymap.set('n', '√', '<cmd>m .+1<cr>==', { desc = 'Move Down' })
+-- vim.keymap.set('n', 'ª', '<cmd>m .-2<cr>==', { desc = 'Move Up' })
+-- vim.keymap.set('i', '√', '<esc><cmd>m .+1<cr>==gi', { desc = 'Move Down' })
+-- vim.keymap.set('i', 'ª', '<esc><cmd>m .-2<cr>==gi', { desc = 'Move Up' })
+-- vim.keymap.set('v', '√', ":m '>+1<cr>gv=gv", { desc = 'Move Down' })
+-- vim.keymap.set('v', 'ª', ":m '<-2<cr>gv=gv", { desc = 'Move Up' })
 
 -- Use CTRL+<hjkl> to switch between windows
 -- See `:help wincmd` for a list of all window commands
