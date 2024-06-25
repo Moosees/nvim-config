@@ -335,10 +335,14 @@ return {
   },
   {
     'williamboman/mason.nvim',
-    opts = { ensure_installed = {
-      'stylua',
-      'shfmt',
-      'prettier',
-    } },
+    opts = {
+      ensure_installed = {
+        'stylua',
+        -- 'shfmt',
+        -- 'prettierd',
+        'prettier',
+        'eslint_d',
+      },
+    },
   },
 }
