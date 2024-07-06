@@ -117,7 +117,7 @@ return {
               },
             },
           },
-          json = {
+          jsonls = {
             schemas = require('schemastore').json.schemas {
               select = {
                 '.eslintrc',
@@ -342,6 +342,7 @@ return {
         -- 'prettierd',
         'prettier',
         'eslint_d',
+        'json-lsp',
       },
     },
   },

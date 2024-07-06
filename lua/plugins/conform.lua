@@ -26,6 +26,7 @@ return { -- Autoformat
       -- javascript = { { 'prettierd', 'prettier' }, { 'eslint_d','eslint' } },
       javascript = { 'prettier', 'eslint' },
       markdown = { 'markdownlint' },
+      json = { 'jsonls' },
       -- :ConformInfo for debugging
     },
   },
