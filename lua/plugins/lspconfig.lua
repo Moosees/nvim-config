@@ -192,7 +192,7 @@ return {
                     open = true,
                   }
                 end,
-                desc = 'Goto Source Definition',
+                desc = '[g]oto Source [D]efinition',
               },
               {
                 'gR',
@@ -203,34 +203,34 @@ return {
                     open = true,
                   }
                 end,
-                desc = 'File References',
+                desc = '[g]oto File [R]eferences',
               },
               {
                 '<leader>co',
                 LazyVim.lsp.action['source.organizeImports'],
-                desc = 'Organize Imports',
+                desc = '[o]rganize Imports',
               },
-              {
-                '<leader>cM',
-                LazyVim.lsp.action['source.addMissingImports.ts'],
-                desc = 'Add missing imports',
-              },
-              {
-                '<leader>cu',
-                LazyVim.lsp.action['source.removeUnused.ts'],
-                desc = 'Remove unused imports',
-              },
+              -- {
+              --   '<leader>cM',
+              --   LazyVim.lsp.action['source.addMissingImports.ts'],
+              --   desc = 'Add missing imports',
+              -- },
+              -- {
+              --   '<leader>cu',
+              --   LazyVim.lsp.action['source.removeUnused.ts'],
+              --   desc = 'Remove unused imports',
+              -- },
               {
                 '<leader>cD',
                 LazyVim.lsp.action['source.fixAll.ts'],
-                desc = 'Fix all diagnostics',
+                desc = 'Fix all [D]iagnostics',
               },
               {
                 '<leader>cV',
                 function()
                   LazyVim.lsp.execute { command = 'typescript.selectTypeScriptVersion' }
                 end,
-                desc = 'Select TS workspace version',
+                desc = 'Select TS workspace [V]ersion',
               },
             },
           },

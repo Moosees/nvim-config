@@ -1,16 +1,16 @@
 return { -- Autoformat
   'stevearc/conform.nvim',
   lazy = false,
-  keys = {
-    {
-      '<leader>F',
-      function()
-        require('conform').format { async = true, lsp_fallback = true }
-      end,
-      mode = '',
-      desc = 'Con[F]orm buffer',
-    },
-  },
+  -- keys = {
+  --   {
+  --     '<leader>F',
+  --     function()
+  --       require('conform').format { async = true, lsp_fallback = true }
+  --     end,
+  --     mode = '',
+  --     desc = 'Con[F]orm buffer',
+  --   },
+  -- },
 
   opts = {
     -- Set the log level. Use `:ConformInfo` to see the location of the log file.

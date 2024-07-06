@@ -1,6 +1,7 @@
 return {
   'folke/which-key.nvim',
-  event = 'VeryLazy', -- Sets the loading event to 'VimEnter' (`:help autocmd-events`)
+  -- event = 'VeryLazy', -- Sets the loading event to 'VimEnter' (`:help autocmd-events`)
+  event = 'VimEnter',
   config = function() -- This is the function that runs, AFTER loading
     vim.o.timeout = true
     vim.o.timeoutlen = 300
@@ -10,39 +11,38 @@ return {
     local presets = require 'which-key.plugins.presets'
     presets.motions['['] = 'Previous'
     presets.motions[']'] = 'Next'
-    presets.motions['g'] = 'Go to'
+    presets.motions['g'] = 'Goto'
 
     -- setup and document key chains
     local wk = require 'which-key'
     wk.setup {
       -- add operators that will trigger motion and text object completion
-      operators = { gc = 'Comments' },
+      operators = { gc = 'Line [c]omments', gb = '[b]lock comments' },
       hidden = { '<silent>', '<cmd>', '<Cmd>', '<CR>', '^:', '^ ', '^call ', '^lua ' }, -- hide mapping boilerplate
     }
 
     wk.register {
-      ['<leader>b'] = { name = '[B]uffers', _ = 'which_key_ignore' },
-      ['<leader>c'] = { name = '[C]ode', _ = 'which_key_ignore' },
-      ['<leader>d'] = { name = '[D]ocument', _ = 'which_key_ignore' },
-      ['<leader>f'] = { name = '[F]ind', _ = 'which_key_ignore' },
-      ['<leader>g'] = { name = 'Lazy[G]it', _ = 'which_key_ignore' },
-      ['<leader>h'] = { name = 'Git [H]unk', _ = 'which_key_ignore' },
-      ['<leader>r'] = { name = '[R]efactor', _ = 'which_key_ignore' },
-      ['<leader>s'] = { name = '[S]earch', _ = 'which_key_ignore' },
-      ['<leader>t'] = { name = '[T]oggle', _ = 'which_key_ignore' },
-      ['<leader>u'] = { name = '[U]til/toggle', _ = 'which_key_ignore' },
-      ['<leader>w'] = { name = '[W]orkspace', _ = 'which_key_ignore' },
-      ['<leader>x'] = { name = 'Fi[X] Trouble', _ = 'which_key_ignore' },
+      ['<leader>b'] = { name = '[b]uffers', _ = 'which_key_ignore' },
+      ['<leader>c'] = { name = '[c]ode', _ = 'which_key_ignore' },
+      ['<leader>d'] = { name = '[d]ocument', _ = 'which_key_ignore' },
+      ['<leader>f'] = { name = '[f]ind', _ = 'which_key_ignore' },
+      ['<leader>g'] = { name = 'Lazy[g]it', _ = 'which_key_ignore' },
+      ['<leader>h'] = { name = 'Git [h]unk', _ = 'which_key_ignore' },
+      ['<leader>r'] = { name = '[r]efactor', _ = 'which_key_ignore' },
+      ['<leader>s'] = { name = '[s]earch', _ = 'which_key_ignore' },
+      ['<leader>u'] = { name = '[u]til/toggle', _ = 'which_key_ignore' },
+      ['<leader>w'] = { name = '[w]orkspace', _ = 'which_key_ignore' },
+      ['<leader>x'] = { name = 'Fi[x] trouble', _ = 'which_key_ignore' },
       ['<leader><tab>'] = { name = '[Tab]s', _ = 'which_key_ignore' },
-      ['gs'] = { name = '[S]urround' },
+      ['gs'] = { name = '[s]urround' },
     }
 
     -- visual mode
     wk.register({
-      ['<leader>c'] = { 'Format [C]ode' },
-      ['<leader>h'] = { 'Git [H]unk' },
-      ['gs'] = { '[S]urround' },
-      ['<leader>s'] = { '[S]earch' },
+      ['<leader>c'] = { 'Format [c]ode' },
+      ['<leader>h'] = { 'Git [h]unk' },
+      ['gs'] = { '[s]urround' },
+      ['<leader>s'] = { '[s]earch' },
     }, { mode = 'v' })
   end,
 }

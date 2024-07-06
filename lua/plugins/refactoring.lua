@@ -11,11 +11,8 @@ return {
         require('telescope').extensions.refactoring.refactors()
       end,
       mode = 'n',
-      desc = 'Refactor',
+      desc = '[r]efacto[r]',
     },
   },
-  config = function()
-    ---@diagnostic disable-next-line: missing-parameter
-    require('refactoring').setup()
-  end,
+  opts = {},
 }

@@ -5,15 +5,15 @@ return {
   dependencies = 'nvim-tree/nvim-web-devicons',
   keys = function()
     return {
-      { '<leader>bp', '<Cmd>BufferLineTogglePin<CR>', desc = 'Toggle Pin' },
-      { '<leader>bP', '<Cmd>BufferLineGroupClose ungrouped<CR>', desc = 'Delete Non-Pinned Buffers' },
-      { '<leader>bo', '<Cmd>BufferLineCloseOthers<CR>', desc = 'Delete Other Buffers' },
-      { '<leader>br', '<Cmd>BufferLineCloseRight<CR>', desc = 'Delete Buffers to the Right' },
-      { '<leader>bl', '<Cmd>BufferLineCloseLeft<CR>', desc = 'Delete Buffers to the Left' },
+      { '<leader>bp', '<Cmd>BufferLineTogglePin<CR>', desc = '[b]uffers toggle [p]in' },
+      { '<leader>bP', '<Cmd>BufferLineGroupClose ungrouped<CR>', desc = '[b]uffers delete non-[P]inned' },
+      { '<leader>bo', '<Cmd>BufferLineCloseOthers<CR>', desc = '[b]uffers delete [o]ther' },
+      { '<leader>br', '<Cmd>BufferLineCloseRight<CR>', desc = '[buffers] delete to the [r]ight' },
+      { '<leader>bl', '<Cmd>BufferLineCloseLeft<CR>', desc = '[b]uffers delete to the [l]eft' },
       { '<S-h>', '<cmd>BufferLineCyclePrev<cr>', desc = 'Prev Buffer' },
       { '<S-l>', '<cmd>BufferLineCycleNext<cr>', desc = 'Next Buffer' },
-      { '[b', '<cmd>BufferLineMovePrev<cr>', desc = 'Move buffer prev' },
-      { ']b', '<cmd>BufferLineMoveNext<cr>', desc = 'Move buffer next' },
+      { '[b', '<cmd>BufferLineMovePrev<cr>', desc = 'Move [b]uffer prev' },
+      { ']b', '<cmd>BufferLineMoveNext<cr>', desc = 'Move [b]uffer next' },
     }
   end,
   opts = {

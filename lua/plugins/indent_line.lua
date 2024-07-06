@@ -5,7 +5,7 @@ return { -- Add indentation guides even on blank lines
   -- See `:help ibl`
   main = 'ibl',
   config = function()
-    vim.keymap.set('n', '<leader>ti', ':IBLToggle<cr>', { desc = '[t]oggle [i]ndent-blankline' })
+    vim.keymap.set('n', '<leader>uI', ':IBLToggle<cr>', { desc = 'Toggle indent-blankline' })
 
     local highlight = {
       'RainbowRed',
