@@ -1,9 +1,8 @@
 return {
   'akinsho/bufferline.nvim',
   event = 'VeryLazy',
-  after = 'catppuccin',
   version = '*',
-  dependencies = 'nvim-tree/nvim-web-devicons',
+  dependencies = { 'nvim-tree/nvim-web-devicons', 'catppuccin/nvim' },
   keys = function()
     return {
       { '<leader>bp', '<Cmd>BufferLineTogglePin<CR>', desc = '[b]uffers toggle [p]in' },

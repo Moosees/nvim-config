@@ -1,8 +1,8 @@
 return {
   'folke/which-key.nvim',
   -- event = 'VeryLazy', -- Sets the loading event to 'VimEnter' (`:help autocmd-events`)
-  event = 'VimEnter',
-  after = 'catppuccin',
+  lazy = false,
+  dependencies = { 'catppuccin/nvim' },
   config = function() -- This is the function that runs, AFTER loading
     vim.o.timeout = true
     vim.o.timeoutlen = 300

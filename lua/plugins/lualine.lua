@@ -1,7 +1,7 @@
 return {
   'nvim-lualine/lualine.nvim',
-  dependencies = { 'nvim-tree/nvim-web-devicons' },
-  after = 'catppucin',
+  dependencies = { 'nvim-tree/nvim-web-devicons', 'catppuccin/nvim' },
+  event = 'VeryLazy',
 
   config = function()
     -- local colors = {
