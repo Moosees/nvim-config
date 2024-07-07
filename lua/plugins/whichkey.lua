@@ -2,6 +2,7 @@ return {
   'folke/which-key.nvim',
   -- event = 'VeryLazy', -- Sets the loading event to 'VimEnter' (`:help autocmd-events`)
   event = 'VimEnter',
+  after = 'catppuccin',
   config = function() -- This is the function that runs, AFTER loading
     vim.o.timeout = true
     vim.o.timeoutlen = 300
@@ -18,7 +19,18 @@ return {
     wk.setup {
       -- add operators that will trigger motion and text object completion
       operators = { gc = 'Line [c]omments', gb = '[b]lock comments' },
+      key_labels = {
+        ['<space>'] = 'SPC',
+        ['<tab>'] = 'TAB',
+      },
+      window = {
+        border = 'shadow',
+        margin = { 0, 0, 0, 0 },
+        padding = { 1, 0, 0, 0 },
+      },
       hidden = { '<silent>', '<cmd>', '<Cmd>', '<CR>', '^:', '^ ', '^call ', '^lua ' }, -- hide mapping boilerplate
+      show_help = false, -- show a help message in the command line for using WhichKey
+      show_keys = false, -- show the currently pressed key and its label as a message in the command line
     }
 
     wk.register {

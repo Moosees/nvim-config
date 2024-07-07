@@ -1,6 +1,7 @@
 return {
   'akinsho/bufferline.nvim',
   event = 'VeryLazy',
+  after = 'catppuccin',
   version = '*',
   dependencies = 'nvim-tree/nvim-web-devicons',
   keys = function()
@@ -30,14 +31,15 @@ return {
         },
       },
       separator_style = { '', '' },
-      highlights = {
-        background = {
-          bg = '#1e1e2e',
-        },
-        fill = {
-          bg = '#1e1e2e',
-        },
-      },
+      highlights = require('catppuccin.groups.integrations.bufferline').get(),
+      -- highlights = {
+      -- background = {
+      --   bg = '#1e1e2e',
+      -- },
+      -- fill = {
+      --   bg = '#1e1e2e',
+      -- },
+      -- },
     },
   },
 }
