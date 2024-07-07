@@ -57,7 +57,7 @@ return {
             --style = 'nvchad'
           },
           treesitter = true,
-          -- treesitter_context = true,
+          treesitter_context = true,
           which_key = false,
         },
       }
