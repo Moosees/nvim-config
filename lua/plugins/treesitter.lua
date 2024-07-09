@@ -3,7 +3,7 @@ return { -- Highlight, edit, and navigate code
   lazy = true,
   build = ':TSUpdate',
   opts = {
-    ensure_installed = { 'bash', 'c', 'query', 'diff', 'html', 'lua', 'luadoc', 'markdown', 'vim', 'vimdoc', 'javascript', 'typescript', 'tsx' },
+    ensure_installed = { 'bash', 'c', 'query', 'diff', 'html', 'lua', 'luadoc', 'markdown', 'vim', 'vimdoc', 'javascript', 'typescript', 'tsx', 'json5' },
     -- Autoinstall languages that are not installed
     auto_install = true,
     highlight = {
