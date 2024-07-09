@@ -142,6 +142,7 @@ return {
               workingDirectories = { mode = 'auto' },
             },
           },
+          marksman = {},
           tsserver = {
             enabled = false,
           },
@@ -343,6 +344,8 @@ return {
         'prettier',
         'eslint_d',
         'json-lsp',
+        'markdownlint-cli2',
+        'markdown-toc',
       },
     },
   },
