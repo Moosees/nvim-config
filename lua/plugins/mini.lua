@@ -27,6 +27,8 @@ return {
       },
     }
 
+    require('mini.icons').setup()
+
     --  Check out: https://github.com/echasnovski/mini.nvim
   end,
 }
