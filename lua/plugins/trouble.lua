@@ -17,7 +17,7 @@ return {
     return {
       { '<leader>xx', '<cmd>Trouble diagnostics toggle<cr>', desc = 'Workspace diagnosti[x]' },
       { '<leader>xX', '<cmd>Trouble diagnostics toggle filter.buf=0<cr>', desc = 'Buffer diagnosi[X]' },
-      { '<leader>xs', '<cmd>Trouble symbols toggle<cr>', desc = '[s]ymbols' },
+      -- { '<leader>xs', '<cmd>Trouble symbols toggle<cr>', desc = '[s]ymbols' },
       { '<leader>xS', '<cmd>Trouble lsp toggle<cr>', desc = 'L[S]P' },
       { '<leader>xL', '<cmd>Trouble loclist toggle<cr>', desc = '[L]ocations' },
       { '<leader>xQ', '<cmd>Trouble qflist toggle<cr>', desc = '[Q]uickfix' },
